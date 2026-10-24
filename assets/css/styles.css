@@ -1,0 +1,128 @@
+/* 1. The Quiet Default: All links rest in your deep charcoal ink */
+
+.navbar-nav .nav-link {
+  color: rgb(47, 46, 44) !important;
+  font-weight: normal !important;
+}
+
+/* 2. The Active State: Stays Burnt Orange and Bold */
+
+.navbar-nav a.nav-link.current-room {
+  color: rgb(196, 85, 41) !important;
+  font-weight: 700 !important;
+}
+
+/* 3. The Hover State: Glides into Burnt Orange and Bold on mouseover */
+
+.navbar-nav .nav-link:hover {
+  color: rgb(196, 85, 41) !important;
+  font-weight: 672 !important;
+  transition: color 0.15s ease-in-out;
+}
+
+/* The Rich Burnt Orange Contact Button */
+
+a.contact-btn {
+  background-color: rgb(196, 85, 41) !important;
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none !important;
+  border: 1px solid rgb(196, 85, 41) !important;
+  padding: 6px 16px !important;
+  border-radius: 4px !important;
+  font-weight: normal !important;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+/* When they mouse over, it gets a tiny bit deeper and bolds the text */
+
+a.contact-btn:hover {
+  background-color: rgb(170, 70, 32) !important;
+  border-color: rgb(170, 70, 32) !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: 700 !important;
+}
+
+/* Keeps the success message hidden until the button is clicked */
+
+.state-success {
+  display: none;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.5)!important;
+  background-image: url("../../assets/img/il_570xN.2885353009_3h45.jpg") !important;
+  background-repeat: repeat !important;
+  background-blend-mode: multiply;
+}
+
+/* Master styles for the river stone containers */
+
+.river-stone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 2.5rem;
+  text-decoration: none !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Force text inside cards to be a solid, highly legible black */
+
+.river-stone h3, .river-stone p, .river-stone .click-more {
+  color: #111111 !important;
+}
+
+/* Gentle lifting animation on hover */
+
+.river-stone:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Stone 1: Terracotta - Smooth asymmetric river stone shape */
+
+.stone-theory {
+  background-color: #E07A5F !important;
+  border-radius: 60% 40% 50% 50% / 40% 50% 50% 60% !important;
+}
+
+/* Stone 2: Olive - Elongated organic river stone shape */
+
+.stone-improv {
+  background-color: #81B29A !important;
+  border-radius: 40% 60% 60% 50% / 50% 40% 60% 50% !important;
+}
+
+/* Stone 3: Ochre Gold - Soft capsule river stone shape */
+
+.stone-vocal {
+  background-color: #F2CC8F !important;
+  border-radius: 50% 50% 40% 60% / 60% 50% 50% 40% !important;
+}
+
+/* Styling the text hierarchy inside the stones */
+
+.river-stone h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.river-stone p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.click-more {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+}
+
